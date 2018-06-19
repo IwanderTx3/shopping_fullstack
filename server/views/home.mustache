@@ -1,0 +1,32 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+
+
+<body>
+<div class='head-block'></div>
+<div class='menu-block'>
+<h1>HOME</h1>
+<div class='add-list'>
+<h2>Add a new list</h2>
+<form action='/home' method='post' >
+    <input type="text" name="title" />
+    <input type="submit" />
+</form>
+</div>
+</div>
+
+{{#shoppingList}}
+  <ul>
+    <li>{{storename}} 
+    <a href='/lists/{{storeid}}'><button>Open shopping list</button></a>
+    </li>
+
+  </ul>  
+{{/shoppingList}}
+
+
+</body>
+
+</html>

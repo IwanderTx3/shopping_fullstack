@@ -1,0 +1,33 @@
+
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+
+
+<body>
+<div class='head-block'></div>
+<div class='menu-block'>
+<h3>{{storename}}</h3>
+<div class='add-list'>
+<h2>Add a new item to the list</h2>
+<form action='/lists/store' method='post' >
+    <input type="hidden" name="storeid" value='{{storeid}}' />
+    <input type="text" name="productname" placeholder="Enter an item"/>
+    <input type="text" name="quantity" placeholder="how many" />
+    <input type="submit" />
+</form>
+</div>
+</div>
+
+{{#itemList}}
+  <ul>
+    <li>{{quantity}} {{productname}}  </li>
+
+  </ul>  
+{{/itemList}}  
+  
+
+</body>
+
+</html>

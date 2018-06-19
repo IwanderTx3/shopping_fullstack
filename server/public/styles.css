@@ -1,0 +1,70 @@
+body{
+    background: url(images/shire.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.head-block{
+    display: flex;
+    height: 5%;
+}
+.menu-block{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    background-color: rgb(250, 235, 215, .75);
+    border-radius: 20%
+}
+.add-list{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 10px ;
+    justify-content: center;
+    height:50px;
+    
+}
+
+form{
+    margin: auto 5px auto 5px;
+}
+
+h1{
+    display: flex;
+    color: blue;
+    margin: auto; 
+}
+
+h2{
+    padding-right: 10px;
+
+}
+
+h3{
+    display: flex;
+    color: deeppink;
+    margin: 0 auto 0 auto;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    width: 30%;
+    margin: 5px auto 5px auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+
+}
+
+li{
+    display: flex;
+    flex-direction: row;
+}
+
+button{margin: 0px 5px 0px auto;}
+
+.slbtn{
+    margin: 0px 5px 0px auto;
+}
