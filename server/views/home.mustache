@@ -5,9 +5,14 @@
 
 
 <body>
-<div class='head-block'></div>
+<div class='head-block'> 
+<a href='/home'><button> HOME </button></a>
+<a href='/home'><button> By Store </button></a>
+<a href='/all'><button> All ITEMS </button></a>
+<a href='/mordor'><button> NO IDEA YET </button></a>
+</div>
 <div class='menu-block'>
-<h1>HOME</h1>
+<h1>Van's wonderful shopping list tracker</h1>
 <div class='add-list'>
 <h2>Add a new list</h2>
 <form action='/home' method='post' >
@@ -16,10 +21,11 @@
 </form>
 </div>
 </div>
-
+<div class='cat1'><h2> By store </h2></div>
 {{#shoppingList}}
   <ul>
-    <li>{{storename}} 
+    
+    <li><h7>{{storename}}</h7> 
     <a href='/lists/{{storeid}}'><button>Open shopping list</button></a>
     </li>
 

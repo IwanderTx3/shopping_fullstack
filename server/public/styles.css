@@ -1,18 +1,35 @@
 body{
     background: url(images/shire.jpeg) no-repeat center center fixed;
     background-size: cover;
+    border-style: outset;
+    font-family: 'Papyrus', 'Arial Narrow', Arial, sans-serif;
+    
 }
 
 .head-block{
     display: flex;
     height: 5%;
+    margin: 0px 0px 10px 0px;
+    background-color: black;
 }
+
+.head-block a{
+    margin: auto auto auto auto;
+}
+
+.head-block a button{
+    margin: auto auto auto auto;
+}
+
 .menu-block{
     display: flex;
     flex-direction: column;
     height: 100px;
+    width: 80%;
     background-color: rgb(250, 235, 215, .75);
-    border-radius: 20%
+    margin: auto;
+    border-radius: 20%;
+    border-style: inset;
 }
 .add-list{
     margin: auto;
@@ -25,6 +42,13 @@ body{
     
 }
 
+.cat1{
+    display: flex;
+    margin: auto;
+    padding: 20px 0px 10px 0px;
+    align-items: center;
+}
+
 form{
     margin: auto 5px auto 5px;
 }
@@ -33,9 +57,12 @@ h1{
     display: flex;
     color: blue;
     margin: auto; 
+    padding: 20 0 10 0;
+    text-shadow: 2px 2px black;
 }
 
 h2{
+    margin: auto; 
     padding-right: 10px;
 
 }
@@ -49,21 +76,33 @@ h3{
 ul{
     display: flex;
     flex-direction: column;
-    background-color: antiquewhite;
+    padding: 0px 0px 0px 10px;
+    background-color: rgb(250, 235, 215, .5);
     width: 30%;
     margin: 5px auto 5px auto;
-    display: flex;
     list-style: none;
-    justify-content: center;
 
 }
 
 li{
     display: flex;
+    height: 38px;
     flex-direction: row;
+    text-align: left;
 }
 
-button{margin: 0px 5px 0px auto;}
+li h7{
+    display: flex;
+    margin: 10px auto 10px 10px; 
+    font-size: 18px;
+    color: black;
+}
+button{
+    height: 18px;
+    margin: 10px auto auto auto;
+    justify-self: right;
+    padding: 5px 5px 5px Auto;
+}
 
 .slbtn{
     margin: 0px 5px 0px auto;

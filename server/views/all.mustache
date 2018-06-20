@@ -13,8 +13,20 @@
 <a href='/all'><button> All ITEMS </button></a>
 <a href='/mordor'><button> NO IDEA YET </button></a>
 </div>
-  <h3>Index</h3>
+<div class='menu-block'>
 
+</div>
+
+{{#storename}}
+  <ul>{{storename}}
+    {{#itemList}}
+        <ul>
+            <li>{{quantity}} {{productname}}  </li>
+        </ul>  
+    {{/itemList}} 
+  </ul>  
+{{/storename}}  
+  
 
 </body>
 
